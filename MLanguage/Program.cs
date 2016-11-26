@@ -70,7 +70,14 @@ namespace MLanguage
                 }
                 if (splitCommand[0] == "compile")
                 {
-                    new Mscript(dir, debug, isDll);
+                    if(splitCommand.Length > 1)
+                    {
+                        new Mscript(dir, debug, isDll, dlls, splitCommand[1]);
+                    }
+                    else
+                    {
+                        new Mscript(dir, debug, isDll, dlls, "App");
+                    }
                 }
             }
         }

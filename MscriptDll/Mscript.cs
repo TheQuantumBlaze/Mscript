@@ -12,10 +12,12 @@ namespace MscriptDll
     public class Mscript
     {
         public static Stack<ClassPair> classes;
-        public Mscript(string dir, bool debug, bool isDll)
+        public static string LatestNamespace = "";
+        public Mscript(string dir, bool debug, bool isDll, List<string> importedDlls, string name)
         {
             classes = new Stack<ClassPair>();
             List<string> dlls = new List<string>();
+            dlls.AddRange(importedDlls);
             if (dir != "")
             {
                 List<string> files = new List<string>();
@@ -58,6 +60,7 @@ namespace MscriptDll
                 if(!otherdata.Contains("called"))
                 {
                     file += "namespace MainNamespace {";
+                    LatestNamespace = "MainNamespace";
                 }
                 if (!otherdata.Contains("class"))
                 {
@@ -85,7 +88,14 @@ namespace MscriptDll
                 {
                     foreach (ClassPair s in classes)
                     {
-                        file += "public partial class " + s.className + (s.UsingInheritance ? " : " + s.InheritanceClassName : "") + " {" + inserteddata + "}";
+                        if (s.namespaceName != "MainNamespace")
+                        {
+                            file += "namespace " + s.namespaceName + "{ public partial class " + s.className + (s.UsingInheritance ? " : " + s.InheritanceClassName : "") + " {" + inserteddata + "}}";
+                        }
+                        else
+                        {
+                            file += "public partial class " + s.className + (s.UsingInheritance ? " : " + s.InheritanceClassName : "") + " {" + inserteddata + "}";
+                        }
                     }
                 }
 
@@ -116,7 +126,7 @@ namespace MscriptDll
                 }
                 if (!isDll)
                 {
-                    var paramsters = new CompilerParameters(dlls.ToArray(), dir + "/Bin/App.exe");
+                    var paramsters = new CompilerParameters(dlls.ToArray(), dir + "/Bin/" + name + ".exe");
                     paramsters.GenerateExecutable = true;
                     using (var provider = new CSharpCodeProvider())
                     {
@@ -132,7 +142,7 @@ namespace MscriptDll
                 }
                 else
                 {
-                    var paramsters = new CompilerParameters(dlls.ToArray(), dir + "/Bin/App.dll");
+                    var paramsters = new CompilerParameters(dlls.ToArray(), dir + "/Bin/" + name + ".dll");
                     paramsters.GenerateExecutable = false;
                     using (var provider = new CSharpCodeProvider())
                     {

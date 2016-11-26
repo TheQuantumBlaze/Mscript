@@ -74,13 +74,14 @@ namespace MscriptDll
             if (token == "class")
             {
                 string returns = "public partial class " + tokens[i + 2];
-                Mscript.classes.Push(new ClassPair(tokens[i + 2], false, ""));
+                Mscript.classes.Push(new ClassPair(tokens[i + 2], false, "", Mscript.LatestNamespace));
                 skip = 3;
                 return returns;
             }
             if (token == "called")
             {
-                string returns = "namespace" + tokens[i + 2];
+                string returns = "namespace " + tokens[i + 2];
+                Mscript.LatestNamespace = tokens[i + 2];
                 skip = 3;
                 return returns;
             }
