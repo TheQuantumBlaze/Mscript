@@ -78,7 +78,7 @@ namespace MscriptDll
                 skip = 3;
                 return returns;
             }
-            if (token == "called")
+            if (token == "package")
             {
                 string returns = "namespace " + tokens[i + 2];
                 Mscript.LatestNamespace = tokens[i + 2];
