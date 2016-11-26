@@ -78,6 +78,12 @@ namespace MscriptDll
                 skip = 3;
                 return returns;
             }
+            if (token == "called")
+            {
+                string returns = "namespace" + tokens[i + 2];
+                skip = 3;
+                return returns;
+            }
             if (token == "as")
             {
                 skip = 0;

@@ -54,13 +54,14 @@ namespace MscriptDll
 
                 string file = "";
                 file += headerData;
-                if (!otherdata.Contains("class"))
-                {
-                    file += "namespace MainNamespace { public class MainCode {";
-                }
-                else
+
+                if(!otherdata.Contains("called"))
                 {
                     file += "namespace MainNamespace {";
+                }
+                if (!otherdata.Contains("class"))
+                {
+                    file += "public class MainCode {";
                 }
                 for (int i = 0; i < otherdata.Count; i++)
                 {
@@ -90,9 +91,9 @@ namespace MscriptDll
 
                 if (!otherdata.Contains("class"))
                 {
-                    file += "}}";
+                    file += "}";
                 }
-                else
+                if(!otherdata.Contains("called"))
                 {
                     file += "}";
                 }
