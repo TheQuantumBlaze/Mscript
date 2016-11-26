@@ -57,7 +57,7 @@ namespace MscriptDll
                 string file = "";
                 file += headerData;
 
-                if(!otherdata.Contains("called"))
+                if(!otherdata.Contains("package"))
                 {
                     file += "namespace MainNamespace {";
                     LatestNamespace = "MainNamespace";
@@ -103,7 +103,7 @@ namespace MscriptDll
                 {
                     file += "}";
                 }
-                if(!otherdata.Contains("called"))
+                if(!otherdata.Contains("package"))
                 {
                     file += "}";
                 }
