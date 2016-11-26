@@ -1,0 +1,24 @@
+﻿public static void println(string data)
+{
+    Console.WriteLine(data);
+}
+
+public static void halt()
+{
+	Console.ReadKey(true);
+}
+
+public static string getConsoleInput()
+{
+	return Console.ReadLine();
+}
+
+public static string loadFromFile(string url)
+{
+	string data = "";
+	using(TextReader tr = new StreamReader(url))
+	{
+        data = tr.ReadToEnd();
+	}
+    return data;
+}

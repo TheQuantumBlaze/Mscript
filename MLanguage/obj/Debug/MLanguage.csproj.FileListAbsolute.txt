@@ -1,0 +1,27 @@
+c:\users\user\documents\visual studio 2015\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.exe.config
+c:\users\user\documents\visual studio 2015\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.exe
+c:\users\user\documents\visual studio 2015\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.pdb
+c:\users\user\documents\visual studio 2015\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.exe
+c:\users\user\documents\visual studio 2015\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.pdb
+D:\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.exe.config
+D:\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.exe
+D:\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.pdb
+D:\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.exe
+D:\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.pdb
+D:\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.csprojResolveAssemblyReference.cache
+E:\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.exe.config
+E:\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.exe
+E:\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.pdb
+E:\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.exe
+E:\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.pdb
+E:\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.csprojResolveAssemblyReference.cache
+F:\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.exe.config
+F:\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.exe
+F:\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.pdb
+C:\Users\user\Desktop\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.exe.config
+C:\Users\user\Desktop\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.exe
+C:\Users\user\Desktop\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.pdb
+C:\Users\user\Desktop\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.exe
+C:\Users\user\Desktop\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.pdb
+C:\Users\user\Desktop\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.csprojResolveAssemblyReference.cache

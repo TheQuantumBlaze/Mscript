@@ -1,0 +1,12 @@
+E:\Projects\MLanguage\dllTest\bin\Debug\dllTest.dll
+E:\Projects\MLanguage\dllTest\bin\Debug\dllTest.pdb
+E:\Projects\MLanguage\dllTest\obj\Debug\dllTest.csprojResolveAssemblyReference.cache
+E:\Projects\MLanguage\dllTest\obj\Debug\dllTest.dll
+E:\Projects\MLanguage\dllTest\obj\Debug\dllTest.pdb
+E:\Projects\MLanguage\dllTest\bin\Debug\fNbt.dll
+C:\Users\user\Desktop\Projects\MLanguage\dllTest\bin\Debug\dllTest.dll
+C:\Users\user\Desktop\Projects\MLanguage\dllTest\bin\Debug\dllTest.pdb
+C:\Users\user\Desktop\Projects\MLanguage\dllTest\bin\Debug\fNbt.dll
+C:\Users\user\Desktop\Projects\MLanguage\dllTest\obj\Debug\dllTest.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Projects\MLanguage\dllTest\obj\Debug\dllTest.dll
+C:\Users\user\Desktop\Projects\MLanguage\dllTest\obj\Debug\dllTest.pdb
