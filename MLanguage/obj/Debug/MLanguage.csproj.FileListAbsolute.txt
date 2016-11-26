@@ -25,3 +25,11 @@ C:\Users\user\Desktop\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.pdb
 C:\Users\user\Desktop\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.exe
 C:\Users\user\Desktop\Projects\MLanguage\MLanguage\bin\Debug\MLanguage.pdb
 C:\Users\user\Desktop\Projects\MLanguage\MLanguage\obj\Debug\MLanguage.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\Mscript\MLanguage\bin\Debug\MLanguage.exe.config
+C:\Users\user\Documents\GitHub\Mscript\MLanguage\obj\Debug\MLanguage.exe
+C:\Users\user\Documents\GitHub\Mscript\MLanguage\obj\Debug\MLanguage.pdb
+C:\Users\user\Documents\GitHub\Mscript\MLanguage\bin\Debug\MLanguage.exe
+C:\Users\user\Documents\GitHub\Mscript\MLanguage\bin\Debug\MLanguage.pdb
+C:\Users\user\Documents\GitHub\Mscript\MLanguage\bin\Debug\MscriptDll.dll
+C:\Users\user\Documents\GitHub\Mscript\MLanguage\bin\Debug\MscriptDll.pdb
+C:\Users\user\Documents\GitHub\Mscript\MLanguage\obj\Debug\MLanguage.csprojResolveAssemblyReference.cache

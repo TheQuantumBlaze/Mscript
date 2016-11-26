@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{56EDDE3C-FFA4-4115-87C2-FAA09C61F705}</ProjectGuid>
+    <ProjectGuid>{697A0FA8-D4FA-4D76-81CA-42BB002BB5AB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>dllTest</RootNamespace>
-    <AssemblyName>dllTest</AssemblyName>
+    <RootNamespace>MscriptDll</RootNamespace>
+    <AssemblyName>MscriptDll</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="fNbt">
-      <HintPath>..\MLanguage\bin\Debug\code\fNbt.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="ClassPair.cs" />
+    <Compile Include="CodeComponents.cs" />
+    <Compile Include="LanguageConverter.cs" />
+    <Compile Include="Mscript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

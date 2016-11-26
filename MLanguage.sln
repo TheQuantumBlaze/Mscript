@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLanguage", "MLanguage\MLanguage.csproj", "{0DC5B545-E40D-4881-801A-D149E121A441}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dllTest", "dllTest\dllTest.csproj", "{56EDDE3C-FFA4-4115-87C2-FAA09C61F705}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MscriptDll", "MscriptDll\MscriptDll.csproj", "{697A0FA8-D4FA-4D76-81CA-42BB002BB5AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{0DC5B545-E40D-4881-801A-D149E121A441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DC5B545-E40D-4881-801A-D149E121A441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DC5B545-E40D-4881-801A-D149E121A441}.Release|Any CPU.Build.0 = Release|Any CPU
-		{56EDDE3C-FFA4-4115-87C2-FAA09C61F705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56EDDE3C-FFA4-4115-87C2-FAA09C61F705}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56EDDE3C-FFA4-4115-87C2-FAA09C61F705}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56EDDE3C-FFA4-4115-87C2-FAA09C61F705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697A0FA8-D4FA-4D76-81CA-42BB002BB5AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697A0FA8-D4FA-4D76-81CA-42BB002BB5AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697A0FA8-D4FA-4D76-81CA-42BB002BB5AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697A0FA8-D4FA-4D76-81CA-42BB002BB5AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

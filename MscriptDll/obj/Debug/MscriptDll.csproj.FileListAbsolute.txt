@@ -1,0 +1,5 @@
+C:\Users\user\Documents\GitHub\Mscript\MscriptDll\bin\Debug\MscriptDll.dll
+C:\Users\user\Documents\GitHub\Mscript\MscriptDll\bin\Debug\MscriptDll.pdb
+C:\Users\user\Documents\GitHub\Mscript\MscriptDll\obj\Debug\MscriptDll.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\Mscript\MscriptDll\obj\Debug\MscriptDll.dll
+C:\Users\user\Documents\GitHub\Mscript\MscriptDll\obj\Debug\MscriptDll.pdb
