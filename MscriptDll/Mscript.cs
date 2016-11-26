@@ -131,9 +131,8 @@ namespace MscriptDll
                 }
                 else
                 {
-                    var paramsters = new CompilerParameters(dlls.ToArray());
+                    var paramsters = new CompilerParameters(dlls.ToArray(), dir + "/Bin/App.dll");
                     paramsters.GenerateExecutable = false;
-                    paramsters.OutputAssembly = "/Bin/App.exe";
                     using (var provider = new CSharpCodeProvider())
                     {
                         CompilerResults cr = provider.CompileAssemblyFromSource(paramsters, new string[] { file });

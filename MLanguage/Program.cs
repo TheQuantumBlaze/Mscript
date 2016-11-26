@@ -16,6 +16,7 @@ namespace MLanguage
         {
             Console.WriteLine("Mscript Compiler");
             string dir = "";
+            bool isDll = false;
             bool debug = false;
             List<string> dlls = new List<string>();
             while (true)
@@ -35,7 +36,7 @@ namespace MLanguage
                 {
                     break;
                 }
-                if (splitCommand[0] == "dlls")
+                if (splitCommand[0] == "dlls" && splitCommand.Length > 1)
                 {
                     if (splitCommand[1] == "list")
                     {
@@ -62,9 +63,14 @@ namespace MLanguage
                     debug = !debug;
                     Console.WriteLine("Debug: " + debug.ToString());
                 }
+                if (splitCommand[0] == "isdll")
+                {
+                    isDll = !isDll;
+                    Console.WriteLine("isDll: " + isDll.ToString());
+                }
                 if (splitCommand[0] == "compile")
                 {
-                    new Mscript(dir, debug, false);
+                    new Mscript(dir, debug, isDll);
                 }
             }
         }
