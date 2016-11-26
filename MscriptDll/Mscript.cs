@@ -12,10 +12,13 @@ namespace MscriptDll
     public class Mscript
     {
         public static Stack<ClassPair> classes;
+        public static List<string> headerFiles;
+
         public static string LatestNamespace = "";
         public Mscript(string dir, bool debug, bool isDll, List<string> importedDlls, string name)
         {
             classes = new Stack<ClassPair>();
+            headerFiles = new List<string>();
             List<string> dlls = new List<string>();
             dlls.AddRange(importedDlls);
             if (dir != "")
@@ -29,6 +32,12 @@ namespace MscriptDll
                     {
                         using (TextReader tr = new StreamReader(f))
                             files.Add(tr.ReadToEnd());
+                    }
+
+                    if(f.EndsWith(".header"))
+                    {
+                        using (TextReader tr = new StreamReader(f))
+                            headerFiles.Add(tr.ReadToEnd());
                     }
                 }
 
@@ -50,6 +59,10 @@ namespace MscriptDll
                 using (TextReader tr = new StreamReader(@"code\header.txt"))
                 {
                     headerData = tr.ReadToEnd();
+                    foreach(var s in headerFiles)
+                    {
+                        headerData += s;
+                    }
                 }
                 LanguageConverter lc = new LanguageConverter();
                 var otherdata = lc.convert(data);
