@@ -18,6 +18,7 @@ namespace MLanguage
             string dir = "";
             bool isDll = false;
             bool debug = false;
+            bool unSafe = false;
             List<string> dlls = new List<string>();
             while (true)
             {
@@ -63,6 +64,11 @@ namespace MLanguage
                     debug = !debug;
                     Console.WriteLine("Debug: " + debug.ToString());
                 }
+                if (splitCommand[0] == "unsafe")
+                {
+                    unSafe = !unSafe;
+                    Console.WriteLine("Unsafe: " + unSafe.ToString());
+                }
                 if (splitCommand[0] == "isdll")
                 {
                     isDll = !isDll;
@@ -72,11 +78,11 @@ namespace MLanguage
                 {
                     if(splitCommand.Length > 1)
                     {
-                        new Mscript(dir, debug, isDll, dlls, splitCommand[1]);
+                        new Mscript(dir, debug, isDll, dlls, splitCommand[1],unSafe);
                     }
                     else
                     {
-                        new Mscript(dir, debug, isDll, dlls, "App");
+                        new Mscript(dir, debug, isDll, dlls, "App",unSafe);
                     }
                 }
             }

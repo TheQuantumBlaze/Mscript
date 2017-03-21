@@ -15,7 +15,7 @@ namespace MscriptDll
         public static List<string> headerFiles;
 
         public static string LatestNamespace = "";
-        public Mscript(string dir, bool debug, bool isDll, List<string> importedDlls, string name)
+        public Mscript(string dir, bool debug, bool isDll, List<string> importedDlls, string name, bool isUnsafe)
         {
             classes = new Stack<ClassPair>();
             headerFiles = new List<string>();
@@ -141,6 +141,10 @@ namespace MscriptDll
                 {
                     var paramsters = new CompilerParameters(dlls.ToArray(), dir + "/Bin/" + name + ".exe");
                     paramsters.GenerateExecutable = true;
+                    if (isUnsafe)
+                    {
+                        paramsters.CompilerOptions = "/unsafe";
+                    }
                     using (var provider = new CSharpCodeProvider())
                     {
                         CompilerResults cr = provider.CompileAssemblyFromSource(paramsters, new string[] { file });
@@ -157,6 +161,10 @@ namespace MscriptDll
                 {
                     var paramsters = new CompilerParameters(dlls.ToArray(), dir + "/Bin/" + name + ".dll");
                     paramsters.GenerateExecutable = false;
+                    if (isUnsafe)
+                    {
+                        paramsters.CompilerOptions = "/unsafe";
+                    }
                     using (var provider = new CSharpCodeProvider())
                     {
                         CompilerResults cr = provider.CompileAssemblyFromSource(paramsters, new string[] { file });
